@@ -85,6 +85,6 @@ STATIC_URL = '/static/'
 OPBEAT = {
     "ORGANIZATION_ID": "8da79d9d2c944779aef00686c635910c",
     "APP_ID": "49c5fa76f6",
-    "SECRET_TOKEN": "1b6ec6a116131583197709905cb37eb9937d9647"
+    "SECRET_TOKEN": "1b6ec6a116131583197709905cb37eb9937d9647",
 	"SERVERS": ['http://opbeat.dev.woh.li'],
 }
