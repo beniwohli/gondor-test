@@ -24,7 +24,7 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -56,12 +56,9 @@ WSGI_APPLICATION = 'mylittlesite.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
-
+import dj_database_url
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    'default': dj_database_url.parse(os.environ['GONDOR_DATABASE_URL']),
 }
 
 # Internationalization
@@ -84,8 +81,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 OPBEAT = {
-    "ORGANIZATION_ID": "ff87979a5b7f41d5b6a9f8ecc9ed88ba",
-    "APP_ID": "f147dc5910",
-    "SECRET_TOKEN": "3842233a0d2953761948581f80f0e2e3609153fc",
     "SERVERS": ['https://stage.opbeat.com'],
 }
