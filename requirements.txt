@@ -1,3 +1,4 @@
 Django==1.7.5
 opbeat==2.0.3
 dj-database-url==0.3.0
+psycopg2
