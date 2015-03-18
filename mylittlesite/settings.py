@@ -80,6 +80,3 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-OPBEAT = {
-    "SERVERS": ['https://stage.opbeat.com'],
-}
