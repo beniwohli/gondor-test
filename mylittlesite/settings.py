@@ -39,6 +39,7 @@ INSTALLED_APPS = (
 )
 
 MIDDLEWARE_CLASSES = (
+    'opbeat.contrib.django.middleware.OpbeatAPMMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -83,8 +84,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 OPBEAT = {
-    "ORGANIZATION_ID": "8da79d9d2c944779aef00686c635910c",
-    "APP_ID": "49c5fa76f6",
-    "SECRET_TOKEN": "1b6ec6a116131583197709905cb37eb9937d9647",
-	"SERVERS": ['http://opbeat.dev.woh.li'],
+    "ORGANIZATION_ID": "ff87979a5b7f41d5b6a9f8ecc9ed88ba",
+    "APP_ID": "f147dc5910",
+    "SECRET_TOKEN": "3842233a0d2953761948581f80f0e2e3609153fc",
+    "SERVERS": ['https://stage.opbeat.com'],
 }
